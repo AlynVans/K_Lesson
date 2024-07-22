@@ -1,69 +1,71 @@
 package lesson_1
 
-import java.util.*
+const val MAX_AGE = 120 // Константа максимального возраста
 
-val scan = Scanner(System.`in`)
-
-const val maxAge = 120 //Константа
 fun main() {
-
+    // Приветственное сообщение
     println(
         """Hello Again!
-       $maxAge
+       $MAX_AGE
        Test2"""
     )
 
+    // Работа с числами
     println("\n\tNumbers\n")
 
-    val a: Byte = -128
-    println("This variable is of type Byte - $a")
-    val b: Short = -32_768
-    println("This variable is of type Short - $b")
-    val c: Int = -2_147_483_648
-    println("This variable is of type Int - $c")
-    val d: Long = -9_223_372_036_854_775_807
-    println("This variable is of type Long - $d")
+    val byteVal: Byte = -128
+    println("This variable is of type Byte - $byteVal")
+    val shortVal: Short = -32_768
+    println("This variable is of type Short - $shortVal")
+    val intVal: Int = -2_147_483_648
+    println("This variable is of type Int - $intVal")
+    val longVal: Long = -9_223_372_036_854_775_807
+    println("This variable is of type Long - $longVal")
 
+    // Работа с положительными числами
     println("\n\tPositive numbers\n")
 
-    val aU: UByte = 255u
-    println("This variable is of type UByte - $aU")
-    val bU: UShort = 65_535u
-    println("This variable is of type UShort - $bU")
-    val cU: UInt = 4_294_967_295u
-    println("This variable is of type UInt - $cU")
-    val dU: ULong = 18_446_743_999_999_999_999u
-    println("This variable is of type ULong - $dU")
+    val uByteVal: UByte = 255u
+    println("This variable is of type UByte - $uByteVal")
+    val uShortVal: UShort = 65_535u
+    println("This variable is of type UShort - $uShortVal")
+    val uIntVal: UInt = 4_294_967_295u
+    println("This variable is of type UInt - $uIntVal")
+    val uLongVal: ULong = 18_446_743_999_999_999_999u
+    println("This variable is of type ULong - $uLongVal")
 
+    // Работа с числами с плавающей точкой
     println("\n\tС плавающей точкой\n")
 
-    val e: Float = 1.2345676f
-    println("This variable is of type Float - $e")
-    val f: Double = 1.123456787654321
-    println("This variable is of type Double - $f")
+    val floatVal: Float = 1.2345676f
+    println("This variable is of type Float - $floatVal")
+    val doubleVal: Double = 1.123456787654321
+    println("This variable is of type Double - $doubleVal")
 
+    // Строки и логические переменные
     println("\n\tСтроковые и логические\n")
 
-    val g: Char = 'A'
-    println("This variable is of type Char - $g")
-    val h: String = "Text"
-    println("This variable is of type String - $h")
-    val i: Boolean = true
-    println("This variable is of type Boolean - $i")
-    val j: Boolean = false
-    println("This variable is of type Boolean - $j")
+    val charVal: Char = 'A'
+    println("This variable is of type Char - $charVal")
+    val stringVal: String = "Text"
+    println("This variable is of type String - $stringVal")
+    val booleanTrue: Boolean = true
+    println("This variable is of type Boolean - $booleanTrue")
+    val booleanFalse: Boolean = false
+    println("This variable is of type Boolean - $booleanFalse")
 
+    // Работа с типом Any
     println("\n\tAny\n")
 
-    var any: Any = "Tom"
-    println("Variable e String = $any")
-    any = 1234
-    println("Variable e Int = $any")
+    var anyVal: Any = "Tom"
+    println("Variable of type String = $anyVal")
+    anyVal = 1234
+    println("Variable of type Int = $anyVal")
 
+    // Ввод данных
     println("\n\tПрикол\n")
 
     print("Enter your name: ")
     val name = readLine()
     println("Hi: $name")
-
 }

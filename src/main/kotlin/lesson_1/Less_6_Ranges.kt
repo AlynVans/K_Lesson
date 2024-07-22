@@ -2,84 +2,83 @@ package lesson_1
 
 fun main() {
 
-    println("\n\tдиапазон\n")
+    println("\n\tRange\n")
 
-    val a1 = 1..5;
-    print(a1)
-
-    println("----------")
-
-    println("\n\tобратный диапазон\n")
-
-    val a2 = 5 downTo 1
-    println(a2)
+    val range1 = 1..5
+    println(range1)
 
     println("----------")
 
-    println("\n\tдиапазон с шагом в 2\n")
+    println("\n\tReverse Range\n")
 
-    val a3 = 1..10 step 2
-    println(a3)
-
-    println("----------")
-
-    println("\n\tобратный диапазон с шагом в 3\n")
-
-    val a4 = 10 downTo 1 step 3
-    println(a4)
+    val reverseRange1 = 5 downTo 1
+    println(reverseRange1)
 
     println("----------")
 
-    println("\n\tдиапазон до 9, 9 не включительно\n")
+    println("\n\tRange with Step of 2\n")
 
-    val a5 = 1 until 9
-    println(a5)
-
-    println("----------")
-
-    println("\n\tдиапазон по буквам\n")
-
-    val a6 = "a".."f"
-    println(a6)
+    val stepRange1 = 1..10 step 2
+    println(stepRange1)
 
     println("----------")
 
-    println("\n\tдиапазоны по Boolean\n")
+    println("\n\tReverse Range with Step of 3\n")
 
-    val a7 = 1..5
-
-    var isInRange = 5 in a7
-    println(isInRange)      // true
-
-    isInRange = 86 in a7
-    println(isInRange)      // false
-
-    var isNotInRange = 6 !in a7
-    println(isNotInRange)   // true
-
-    isNotInRange = 3 !in a7
-    println(isNotInRange)   // false
+    val reverseStepRange1 = 10 downTo 1 step 3
+    println(reverseStepRange1)
 
     println("----------")
 
-    println("\n\tперебор диапазонов\n")
+    println("\n\tRange until 9, exclusive\n")
 
-    val a8 = 5 downTo 1
-    for (c in a8) print(c)   // 54321
+    val untilRange1 = 1 until 9
+    println(untilRange1)
+
+    println("----------")
+
+    println("\n\tCharacter Range\n")
+
+    val charRange = "a".."f"
+    println(charRange)
+
+    println("----------")
+
+    println("\n\tBoolean Ranges\n")
+
+    val range2 = 1..5
+
+    val isInRange1 = 5 in range2
+    println(isInRange1)  // true
+
+    val isInRange2 = 86 in range2
+    println(isInRange2)  // false
+
+    val isNotInRange1 = 6 !in range2
+    println(isNotInRange1)  // true
+
+    val isNotInRange2 = 3 !in range2
+    println(isNotInRange2)  // false
+
+    println("----------")
+
+    println("\n\tIterating through Ranges\n")
+
+    val reverseRange2 = 5 downTo 1
+    for (num in reverseRange2) print(num)  // 54321
     println()
 
-    val b8 = 'a'..'d'
-    for (c in b8) print(c)   // abcd
+    val charRange2 = 'a'..'d'
+    for (char in charRange2) print(char)  // abcd
     println()
 
-    for (c in 1..9) print(c)     // 123456789
+    for (num in 1..9) print(num)  // 123456789
     println()
 
-    for (c in 1 until 9) print(c)    // 12345678
+    for (num in 1 until 9) print(num)  // 12345678
     println()
 
-    for (c in 1..9 step 2) print(c)  // 13579
+    for (num in 1..9 step 2) print(num)  // 13579
 
     println("\n----------")
-
 }
