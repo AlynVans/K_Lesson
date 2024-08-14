@@ -4,7 +4,6 @@ fun main() {
 
     println("\n\tArray Operations\n")
 
-    // Initialize arrays
     val a1: Array<Int> = arrayOf(1, 2, 3, 4, 5)
     val b2 = Array(3) { 5 }
     val n1 = a1[1]
@@ -17,7 +16,6 @@ fun main() {
     println("\n\tIterating Over Array\n")
 
     val a2 = arrayOf(1, 2, 3, 4, 5)
-    // Iterating through each element in the array and printing it
     for (b2 in a2) {
         print("$b2\t")
     }
@@ -26,7 +24,6 @@ fun main() {
 
     val c2 = arrayOf("Tom", "Sam", "Bob")
     var i2 = 0
-    // Iterating through the array using indices and printing each element
     while (i2 in c2.indices) {
         println(c2[i2])
         i2++
@@ -37,7 +34,6 @@ fun main() {
     println("\n\tArray Contains Check\n")
 
     val d2: Array<Int> = arrayOf(1, 2, 3, 4, 5)
-    // Checking if the array contains certain elements
     println(4 in d2)  // true
     println(5 in d2)  // true
     println(2 !in d2) // false
@@ -73,7 +69,6 @@ fun main() {
     a5[0] = arrayOf(1, 2, 3)
     a5[1] = arrayOf(4, 5, 6)
     a5[2] = arrayOf(7, 8, 9)
-    // Iterating through the 2D array and printing each element
     for (b5 in a5) {
         for (c5 in b5) {
             print("$c5 \t")
@@ -82,5 +77,4 @@ fun main() {
     }
 
     println("----------")
-
 }

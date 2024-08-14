@@ -24,7 +24,7 @@ fun main() {
 
     println("----------")
 
-    println("\n\twhen statement\n")
+    println("\n\tWhen statement\n")
 
     val enabled = true
     when (enabled) {
@@ -83,15 +83,43 @@ fun main() {
     val number8 = 15
     when (val sum = number7 + number8) {
         10 -> println("sum = 10")
-        20 -> println("sum = 20")
+        20 - 5 -> println("sum = 20")
         number8 + 5 -> println("This is also possible")
         else -> println("sum = $sum")
     }
 
+    println("----------")
+
+    println("\n\twhen as an alternative for if..else\n")
+
+    val number9 = 15
+    val number10 = 6
+    when{
+        (number10 > 10) -> println("b больше 10")
+        (number9 > 10) -> println("a больше 10")
+        else -> println("и a, и b меньше или равны 10")
+    }
+
     println("\n\twhen used as a variable value\n")
 
-    val number9 = 1000
-    val result = when (number9) {
+    println("----------")
+
+    println("Returning a value")
+
+        val day = 2
+        val dayOfweek = when (day) {
+            1 -> "Monday"
+            2 -> "Tuesday"
+            3 -> "Wednesday"
+            4 -> "Thursday"
+            else -> "Unknown"
+        }
+        println(dayOfweek)
+
+    println("----------")
+
+    val number11 = 1000
+    val result = when (number11) {
         in 100..999 -> 10
         in 1000..9999 -> 15
         else -> 20

@@ -43,7 +43,6 @@ fun calculateSum(numbers: Array<Int>) {
 }
 
 fun classifyNumber() {
-    // Function to classify a number as small, medium, or large
     print("Enter a number: ")
     val number = scanner.nextLine().toIntOrNull()
     when {
@@ -55,7 +54,6 @@ fun classifyNumber() {
 }
 
 fun sortWordsByLength() {
-    // Function to sort and print words by their length in descending order
     val words = listOf("Bruh", "Kotlin", "Compose", "Pizdes", "Sun")
     val sortedWords = words.sortedByDescending { it.length }
     println(sortedWords)
